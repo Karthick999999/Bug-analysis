@@ -1,0 +1,38 @@
+{
+  "target_url": "http://httpbin.org",
+  "start_time": "2025-07-07T10:36:23.824431",
+  "end_time": "2025-07-07T10:38:42.554135",
+  "total_urls_discovered": 2,
+  "total_urls_tested": 2,
+  "vulnerabilities": [
+    {
+      "url": "http://httpbin.org/forms/post",
+      "vulnerability_type": "SQL Injection",
+      "risk_level": "High",
+      "description": "SQL injection vulnerability detected",
+      "payload": null,
+      "parameter": null,
+      "evidence": null,
+      "timestamp": "2025-07-07T10:37:32.952332"
+    },
+    {
+      "url": "http://httpbin.org/forms/post",
+      "vulnerability_type": "Cross-Site Scripting",
+      "risk_level": "Medium",
+      "description": "Cross-site scripting vulnerability detected",
+      "payload": null,
+      "parameter": null,
+      "evidence": null,
+      "timestamp": "2025-07-07T10:38:38.826576"
+    }
+  ],
+  "scan_config": {
+    "max_urls": 50,
+    "delay": 1.0,
+    "timeout": 10,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "follow_redirects": true,
+    "verify_ssl": false,
+    "max_retries": 3
+  }
+}
